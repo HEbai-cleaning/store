@@ -12,7 +12,16 @@ const ExperienceCard = ({ data }) => {
         <p className="lead">
           {data.role}
           <br />
-          {data.date}
+          {data.item1}
+          <br />
+          {data.item2}
+          <br />
+          {data.item3}
+          <br />
+          {data.item4}
+          <br />
+          {data.item5}
+          <br />
         </p>
 
       </div>

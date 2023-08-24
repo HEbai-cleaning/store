@@ -6,32 +6,26 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "黑",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "白",
+  message1: " Passionate about turn olds shoes shining again. ",
+  message2:"腐朽",
   icons: [
     {
-      image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
       image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      url: "https://www.facebook.com/",
     },
     {
       image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
-    },
-    {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.instagram.com/",
     },
     {
       image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.twitter.com/",
     },
   ],
+  imageLink: require("../editable-stuff/shoes.gif")
 };
 
 // ABOUT SECTION
@@ -50,100 +44,87 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  heading: "Why cleaning the shoes",
+  imageLink: require("../editable-stuff/shoes.gif"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-};
+    "Proper shoe care is essential not only for extending the lifespan of your footwear but also for maintaining their appearance and functionality. Regular cleaning, conditioning, and protection can significantly enhance the overall look and feel of your shoes. Whether you have leather, suede, canvas, or synthetic shoes, this guide will walk you through the steps to effectively clean and restore them.",
+  
+  };
 
-// PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
-//      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
-//      i.e ["repository-1", "repo-2"]
-const repos = {
-  show: true,
-  heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
-};
 
 // Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Leadership",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
-};
+
 
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "ADDITIONAL SERVICES/菜单",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Sterilization/杀菌-6$", value: 60 },
+    { name: "add gules/补胶-5$", value: 50 },
+    { name: "Fragrance/增香-5$", value: 50 },
+    { name: "Deoxidation/去氧化-8", value: 80 },
+    { name: "whiting/增白-8$", value: 80 },
+    { name: "Re Dyeing/补色-8$", value: 80 },
+
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "Sterilization/杀菌-8", value: 80 },
+    { name: "Fragrance/增香-5$", value: 90 },
+    { name: "Re Dyeing/补色-10", value: 75 },
+    { name: "water resistance/防水镀膜-10", value: 85 },
   ],
 };
 
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: true,
-  heading: "Get In Touch",
+  heading: "Get In Touch/联系",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "xxx",
+  email: "xxx@gmail.com",
 };
 
 const experiences = {
-  show: false,
-  heading: "Experiences",
+  show: true,
+  heading: "Package deal/套餐",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'REGULAR CLEAN/简洗 $18.00 (500$ under )',// Here Add Company Name
+      
+      item1: '中底、鞋面和鞋带深层织物和皮革洗涤污垢去除',
+      item2: '深层织物和皮革洗涤污垢去除',
+      item3: '泥垢去除',
+      item4:'',
+      item5:''
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'REGULAR DEEP CLEAN/精洗 $30 (500$ under )',
+      
+      item1: '中底、鞋面和鞋带深层织物和皮革洗涤污垢去除',
+      item2: '深层织物和皮革洗涤污垢去除',
+      item3: '泥垢去除',
+      item4:'',
+      item5:''
     },
+    {
+      role: '简洗',
+      
+      item1: '中底、鞋面和鞋带深层织物和皮革洗涤污垢去除',
+      item2: '深层织物和皮革洗涤污垢去除',
+      item3: '泥垢去除',
+      item4:'',
+      item5:''
+    },    {
+      role: '精细',
+     
+      item1: '中底、鞋面和鞋带深层织物和皮革洗涤污垢去除',
+      item2: '深层织物和皮革洗涤污垢去除',
+      item3: '泥垢去除',
+      item4:'',
+      item5:''
+    }
   ]
 }
 
@@ -152,4 +133,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, skills,  getInTouch, experiences };

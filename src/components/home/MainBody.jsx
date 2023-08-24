@@ -2,9 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
-
+import wechat from "./wechat.png";
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ gradient, title, message1,message2,icons }, ref) => {
     return (
       <Jumbotron
         fluid
@@ -22,7 +22,10 @@ const MainBody = React.forwardRef(
           </h1>
           <Typist>
             <div className="lead typist">
-              {message}
+              {message1}
+              <br />
+              {message2}
+              
             </div>
           </Typist>
           <div className="p-5">
@@ -44,8 +47,20 @@ const MainBody = React.forwardRef(
             role="button"
             aria-label="Learn more about me"
           >
+            
             More about me
           </a>
+          <br/>
+          <div className="about-image">
+            <img
+              src={wechat}
+              alt="About Me"
+              className="img-fluid"
+              width={255}
+              height={255}
+            />
+          </div>
+          
         </Container>
       </Jumbotron>
     );
